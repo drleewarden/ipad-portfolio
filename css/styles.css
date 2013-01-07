@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  paddng: 0px; }
+
+body {
+  background: url("../img/diagonal-noise.png") repeat #3264af;
+  margin: 0 auto !important;
+  padding: 20px; }
+
+header {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #e8eef8;
+  border: 1px solid #274d87;
+  color: #3264af;
+  border: 1px groove #ff4e00;
+  background: -webkit-linear-gradient(#ff9200 0%, white 0%); }
+  header h1 {
+    color: #f800be;
+    font-size: 45px; }
+
+.items {
+  border: 1px solid #d3d1e0;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: rgba(254, 254, 254, 0.68);
+  padding: 20px; }
+
+#page-wrap {
+  padding-top: 20px;
+  padding-left: 20px; }
+
+.items a, .items a:active, .items a:link, .items a:visited {
+  font-size: 1.2em;
+  color: #3300CC;
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px; }
+
+.items a:hover {
+  text-decoration: none; }
+
+.brief {
+  font-size: 0.8em;
+  padding-left: 10px; }
+
+.long {
+  font-size: 0.8em;
+  padding-left: 10px; }

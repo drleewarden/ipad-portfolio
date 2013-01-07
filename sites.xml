@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <sites>
+   <site id="0">
+     <title>Think2Loud</title>
+     <img>img/1.jpg</img>
+	<url>http://www.think2loud.com</url>
+     <desc>
+       <brief>this is the brief description.</brief>
+       <long>...and this is the long description.  See how long it is :)</long>
+     </desc>
+   </site>
+   <site id="2">
+     <title>jaredharbour.com</title>
+     <img>img/2.jpg</img>
+	<url>http://www.jaredharbour.com</url>
+     <desc>
+       <brief>this is the brief description.</brief>
+       <long>...and this is the long description.  See how long it is :)</long>
+     </desc>
+   </site>
+   <site id="3">
+     <title>Css Tricks</title>
+     <img>img/3.jpg</img>
+	<url>http://www.css-tricks.com</url>
+     <desc>
+       <brief>this is the brief description.</brief>
+       <long>...and this is the long description.  See how long it is :)</long>
+     </desc>
+   </site>
+   <site id="4">
+     <title>Css Tricks</title>
+     <img>img/3.jpg</img>
+	<url>http://www.css-tricks.com</url>
+     <desc>
+       <brief>this is the brief description.</brief>
+       <long>...and this is the long description.  See how long it is :)</long>
+     </desc>
+   </site>
+ </sites>

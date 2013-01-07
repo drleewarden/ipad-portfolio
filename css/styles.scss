@@ -1,0 +1,87 @@
+//************ var
+
+//colours
+$baseColor: rgb(50,100,175);
+$bColor: #b1a0a0;
+$white: rgba(255,255,255,0.68);
+
+//text
+$h1: 45px;
+
+
+
+
+@mixin border{
+	border: 1px solid #d3d1e0;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+@mixin center{
+	margin: 0 auto !important;
+	padding: 20px;
+	
+	
+}
+@mixin box{
+	border:1px groove #ff4e00;
+	background: -webkit-linear-gradient(#ff9200 0%, #ffffff 0%);
+	
+	
+}
+
+*{
+	margin:0px;
+	paddng:0px;
+}
+
+body{
+	background:url('../img/diagonal-noise.png') repeat $baseColor;
+	@include center;
+}
+
+header {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: lighten($baseColor, 50%);
+  border: 1px solid darken($baseColor, 10%);
+  
+  color: $baseColor;
+  @include box;
+  
+  h1{
+  color: #f800be;
+  font-size: $h1;
+  }
+
+}
+
+.items{
+	@include border;
+	background: $white - .3;
+	padding: 20px;
+
+}
+
+#page-wrap{
+	padding-top:20px;
+	padding-left:20px;
+	}
+
+.items a,.items a:active,.items a:link,.items a:visited{
+	font-size:1.2em;
+	color:#3300CC;
+	text-decoration:underline;
+	display:block;
+	margin-top:10px;
+	}
+.items a:hover{
+	text-decoration:none;	
+	}
+.brief{
+	font-size:0.8em;
+	padding-left:10px;
+	}
+.long{
+	font-size:0.8em;
+	padding-left:10px;
+	}
+
