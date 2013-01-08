@@ -4,17 +4,41 @@
 $baseColor: rgb(50,100,175);
 $bColor: #b1a0a0;
 $white: rgba(255,255,255,0.68);
-
+$left:left;
+$mid:0 auto;
 //text
 $h1: 45px;
 
+@mixin circle {
+	height: 150px;
+	width: 150px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	margin: 50px;
+	box-shadow: 1px 3px 2px  #5a5a5a;
+} 
 
+@mixin topLeftCorner{
+	
+	
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius:10px;
+	 box-shadow: -2px -2px 3px rgba(74,73,73,0.83);
 
+}
+
+@mixin dropShadow{
+	
+	
+	
+	 box-shadow: -1px -1px 1px rgba(74,73,73,0.2);
+
+}
 
 @mixin border{
 	border: 1px solid #d3d1e0;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	-moz-border-radius: 15px 1px;
+	xborder-radius: 15px 15px 15px 0px;
 	}
 @mixin center{
 	margin: 0 auto !important;
@@ -28,7 +52,7 @@ $h1: 45px;
 	
 	
 }
-
+//**** main content
 *{
 	margin:0px;
 	paddng:0px;
@@ -38,29 +62,58 @@ body{
 	background:url('../img/diagonal-noise.png') repeat $baseColor;
 	@include center;
 }
+.container{
+	width: 1200px;
+	
+}
+.wHolder{
+	width: 1000px;
+	margin: 0 auto;
+}
+.breacker{
+	clear: both;
+	display: block;
+	float: none;
+}
+//**** header
 
 header {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: lighten($baseColor, 50%);
-  border: 1px solid darken($baseColor, 10%);
-  
+   @include topLeftCorner;
   color: $baseColor;
-  @include box;
+  padding: 50px;
+  margin: 0;
+ 
   
   h1{
   color: #f800be;
   font-size: $h1;
   }
+  .circ{
+	  @include circle;
+	  background-color: rgba(213,168,199,0.91);
+	  
+  }
 
 }
-
+//**** body
 .items{
 	@include border;
 	background: $white - .3;
-	padding: 20px;
+	padding: 0px;
+	margin: 0 0 15px;
+	@include dropShadow;
 
 }
-
+.imgHolder{
+	float: left;
+	padding: 0;
+}
+.txt_items{
+	
+	color: #aa17d7;
+}
+.breaker
 #page-wrap{
 	padding-top:20px;
 	padding-left:20px;
