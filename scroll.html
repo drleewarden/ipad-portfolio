@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+
+		<title>Basic jScrollPane demo</title>
+
+		<!-- styles specific to demo site -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" \>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" \>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" \>
+		<link type="text/css" href="css/demo.css" rel="stylesheet" media="all" />
+		<!-- styles needed by jScrollPane - include in your own sites -->
+		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
+		<style type="text/css" id="page-css">
+			/* Styles specific to this particular page */
+			.scroll-pane
+			{
+				width: 100%;
+				height: 200px;
+				overflow: auto;
+			}
+			.horizontal-only
+			{
+				height: auto;
+				max-height: 200px;
+			}
+		</style>
+
+		<!-- latest jQuery direct from google's CDN -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<!-- the mousewheel plugin -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<!-- scripts specific to this demo site -->
+		<script type="text/javascript" src="js/demo.js"></script>
+
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+		</script>
+	</head>
+<body>
+<div id="container">
+	<div  class="scroll-pane">
+    <p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dolor massa, elementum non vulputate pharetra, mollis vel risus. In porttitor tristique felis at aliquam. Nulla luctus erat vel erat cursus vel pharetra odio feugiat. Duis tincidunt laoreet elit, vel volutpat augue cursus vel. Vivamus laoreet fermentum sapien eu ultrices. Sed mattis, velit vitae rhoncus volutpat, eros nisl elementum massa, eget varius tellus ligula faucibus nibh. Aliquam a lacus eu orci malesuada sollicitudin sed at nisl. Duis suscipit tempus lobortis. Nullam ultrices dignissim aliquet. Suspendisse ac velit mauris. Cras dui quam, auctor eu dignissim vitae, sagittis eu lacus. Pellentesque vel bibendum ante. Nulla non diam sed neque adipiscing faucibus ut vitae enim.
+	
+	Duis a lacus congue felis sodales vulputate pellentesque in nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras vehicula ligula eu tellus imperdiet a vehicula urna rutrum. Vestibulum aliquam lacus in odio malesuada eu iaculis lacus iaculis. Cras eleifend urna ac felis cursus scelerisque. In eget euismod mi. Donec consequat est ut velit consectetur et vestibulum quam pretium. Nunc hendrerit congue gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	
+	Duis elementum lectus vel justo tempus adipiscing venenatis eros blandit. Mauris sed tellus felis. Donec tincidunt sem eget eros sodales vitae rutrum justo congue. Aliquam blandit laoreet nisi, et luctus urna bibendum quis. Pellentesque aliquet semper elit, vitae gravida justo euismod quis. Curabitur bibendum volutpat nulla, at blandit risus accumsan eu. Donec sagittis erat dapibus ipsum sollicitudin rhoncus.
+	
+	Praesent nec purus sit amet arcu eleifend sagittis et sit amet quam. Proin mollis facilisis imperdiet. Donec aliquet nisi quis nisi pellentesque non vestibulum tellus venenatis. Nulla facilisi. Integer euismod varius adipiscing. Nam in massa quis lacus fermentum convallis. Sed interdum nunc et nisl convallis sed cursus lorem fringilla. Nulla laoreet ultrices vestibulum. In scelerisque adipiscing velit, sed gravida sem cursus in. Vestibulum laoreet vulputate elit at pharetra. Mauris condimentum tincidunt purus, nec posuere felis scelerisque et. Integer mi orci, congue nec vehicula at, imperdiet eu eros.
+	
+	Proin varius nunc vitae nisl iaculis quis imperdiet velit laoreet. Vestibulum tristique, diam hendrerit luctus ultricies, risus eros ullamcorper urna, eget ornare orci nisl vitae nisi. In urna nulla, luctus in porta non, venenatis congue metus. Fusce purus nulla, tempus vitae laoreet eget, elementum aliquet urna. Aliquam velit velit, adipiscing et tempor at, viverra vitae dui. Integer venenatis, felis at posuere iaculis, libero libero imperdiet nisl, vel sollicitudin metus ante at orci. Mauris in fringilla nibh. Duis ullamcorper, dolor sed interdum semper, lorem diam ultricies augue, sed hendrerit quam ligula ac enim. Integer commodo magna pulvinar ante hendrerit in posuere augue facilisis.
+	</p>
+    </div>
+</div>
+</body>
+</html>

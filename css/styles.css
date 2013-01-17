@@ -19,14 +19,20 @@ body {
   display: block;
   float: none; }
 
+.mid {
+  margin: 0 auto; }
+
+[class*="span"] {
+  float: left;
+  margin-left: 0px;
+  min-height: 1px; }
+
 header {
   font-family: Helvetica, Arial, sans-serif;
-  -moz-border-radius-topleft: 10px;
-  border-top-left-radius: 10px;
-  box-shadow: -2px -2px 3px rgba(74, 73, 73, 0.83);
   color: #3264af;
   padding: 50px;
-  margin: 0; }
+  margin: 0;
+  margin-left: 0; }
   header h1 {
     color: #f800be;
     font-size: 45px; }
@@ -37,7 +43,9 @@ header {
     border-radius: 75px;
     margin: 50px;
     box-shadow: 1px 3px 2px  #5a5a5a;
-    background-color: rgba(213, 168, 199, 0.91); }
+    background-color: rgba(213, 168, 199, 0.91);
+    margin: -69px 0;
+    float: right; }
 
 .items {
   border: 1px solid #d3d1e0;

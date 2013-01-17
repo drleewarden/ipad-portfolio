@@ -17,7 +17,9 @@ $h1: 45px;
 	margin: 50px;
 	box-shadow: 1px 3px 2px  #5a5a5a;
 } 
-
+@mixin mid{
+	margin: 0 auto ; 
+}
 @mixin topLeftCorner{
 	
 	
@@ -75,14 +77,21 @@ body{
 	display: block;
 	float: none;
 }
+.mid{
+	@include mid;
+}
 //**** header
-
+[class*="span"] {
+    float: left;
+    margin-left: 0px;
+    min-height: 1px;
+}
 header {
   font-family: Helvetica, Arial, sans-serif;
-   @include topLeftCorner;
   color: $baseColor;
   padding: 50px;
   margin: 0;
+   margin-left: 0;
  
   
   h1{
@@ -92,7 +101,8 @@ header {
   .circ{
 	  @include circle;
 	  background-color: rgba(213,168,199,0.91);
-	  
+	  margin: -69px 0;
+	  float: right;
   }
 
 }
