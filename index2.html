@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" \>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" \>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" \>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<title>Portfolio - Darryn Lee-Warden</title>
+     <script>
+     	$(document).ready(function(){
+			$.ajax({
+				
+				type: "GET",
+				url: "sites.xml",
+				dataType: "xml",
+				success: function(xml) {
+					$(xml).find('site').each(function(){
+						var id = $(this).attr('id');
+						var title = $(this).find('title').text();
+						var url = $(this).find('url').text();
+						var img = $(this).find('img').text();
+						$('<div class="items span12" id="link_'+id+'"></div>').html('<div class="imgHolder"><img src="'+img+'" width="300" height="150"></div>'+'<a class="txt_items" href="'+url+'">'+title+'</a>').appendTo('#page-wrap');
+						$(this).find('desc').each(function(){
+							var brief = $(this).find('brief').text();
+							var long = $(this).find('long').text();
+							$('<div class="brief"></div>').html(brief).appendTo('#link_'+id);
+							$('<div class="long"></div>').html(long).appendTo('#link_'+id);
+						});
+					});
+				}
+			});
+				/*type: "GET",
+				url: "sites.xml",
+				dataType: "xml",
+				success: function(xml) {
+					$(xml).find('site').each(function(){
+						var id = $(this).attr('id');
+						var title = $(this).find('title').text();
+						var url = $(this).find('url').text();
+						var img = $(this).find('img').text();
+						$('<div class="items" id="link_'+id+'"></div>').html('<a href="'+url+'">'+title+'</a>' + '<img src="'+img+'" width="100" height="100">').appendTo('#page-wrap');
+						$(this).find('desc').each(function(){
+							var brief = $(this).find('brief').text();
+							var long = $(this).find('long').text();
+							$('<div class="brief"></div>').html(brief).appendTo('#link_'+id);
+							$('<div class="long"></div>').html(long).appendTo('#link_'+id);
+						});
+					});
+				}
+			});*/
+		});
+     </script>
+</head>
+<body>
+	<div id="container">	
+			<div class="row wHolder">
+				<header class="span12">
+					
+					<h1>Darryn Lee-Warden</h1> 
+						<div class="circ">
+							<h2>About this app:</h2>
+						</div>
+					<h4>This application is compiled using SASS, Bootstrap and AJAX</h4>
+					<p>This demonstrates some technical techniques used to show a gallery of work</p> 
+					
+				</header>
+				<div class="breacker"></div>
+				<div id="page-wrap" class="row-fluid">
+			     	
+			    </div>
+			    <footer class="row">
+			    
+			    </footer>
+		 
+		  </div>
+	 </div>
+</body>
+</html>
