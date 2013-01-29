@@ -11,7 +11,7 @@
    </site>
    <site id="2">
      <title>jaredharbour.com</title>
-     <img>img/2.jpg</img>
+     <img>img/1.jpg</img>
 	<url>http://www.jaredharbour.com</url>
      <desc>
        <brief>this is the brief description.</brief>
@@ -20,7 +20,7 @@
    </site>
    <site id="3">
      <title>Css Tricks</title>
-     <img>img/3.jpg</img>
+     <img>img/1.jpg</img>
 	<url>http://www.css-tricks.com</url>
      <desc>
        <brief>this is the brief description.</brief>
@@ -29,7 +29,7 @@
    </site>
    <site id="4">
      <title>Css Tricks</title>
-     <img>img/3.jpg</img>
+     <img>img/1.jpg</img>
 	<url>http://www.css-tricks.com</url>
      <desc>
        <brief>this is the brief description.</brief>
