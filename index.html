@@ -325,7 +325,8 @@
           <img src="img/slide-01.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
+              <h1>Samsonite</h1>
+              <h2>∆ ROLE: Frontend Developer</h2>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <a class="btn btn-large btn-primary" href="#">Sign up today</a>
             </div>
@@ -335,8 +336,9 @@
           <img src="img/slide-02.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>Taylormade Golf</h1>
+              <h2>∆ ROLE: Frontend Developer</h2> 
+              <p class="lead">This project uses Magento backend and took less then two months. There was a lot of unique functionality such as store finder and sliding thumbnail navigation.</p>
               <a class="btn btn-large btn-primary" href="#">Learn more</a>
             </div>
           </div>
@@ -345,8 +347,9 @@
           <img src="img/slide-03.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>Shoreditch</h1>
+              <h2>∆ ROLE: Designer/Developer</h2>
+              <p class="lead">This project took the collaboration of 2 developers and a designer. All though the design was a combination between myself and another designer</p>
               <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
             </div>
           </div>
@@ -368,8 +371,11 @@
       <div class="row">
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <h2>Samsonite</h2>
+          <p>This was an exciting project to work on it had many ups, downs and about a 1000 coffee's not to mention the 11pm finish times. In saying this it turned out great considering the tight deadline.</br>
+          
+	     
+          </p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
@@ -457,12 +463,12 @@
 						$('<div class="featurette" id="link_'+id+'"><div class="imgHolder"><img class="featurette-image pull-right" src="'+img+'" /></div></div>')
 						
 						
-						$('<div class="items span12" id="link_'+id+'"></div>').html('<div class="imgHolder"><img src="'+img+'" width="300" height="150"></div>'+'<a class="txt_items" href="'+url+'">'+title+'</a>').appendTo('#page-wrap');
+						$('<div class="items span12" id="link_'+id+'"></div>').html('<div class="imgHolder"><img src="'+img+'" width="300" height="150"></div>'+'<a class="txt_items pad" href="'+url+'">'+title+'</a>').appendTo('#page-wrap');
 						$(this).find('desc').each(function(){
 							var brief = $(this).find('brief').text();
 							var long = $(this).find('long').text();
-							$('<h2 class="featurette-heading"></h2>').html(brief).appendTo('#link_'+id);
-							$('<p class="lead"></p>').html(long).appendTo('#link_'+id);
+							$('<h2 class="featurette-heading pad"></h2>').html(brief).appendTo('#link_'+id);
+							$('<p class="lead pad"></p></div>').html(long).appendTo('#link_'+id);
 						});
 					});
 				}

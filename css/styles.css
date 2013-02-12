@@ -2,6 +2,13 @@
   margin: 0px;
   paddng: 0px; }
 
+.items a {
+  color: #4ed767 !important; }
+  .items a:hover {
+    color: #ffb3ff !important; }
+  .items a:visited {
+    color: #c458cb !important; }
+
 body {
   background: url("../img/diagonal-noise.png") repeat #3264af;
   margin: 0 auto !important;
@@ -47,6 +54,11 @@ header {
     margin: -69px 0;
     float: right; }
 
+.featurette-heading {
+  width: 540px;
+  float: left;
+  margin: 0 5px; }
+
 .items {
   border: 1px solid #d3d1e0;
   -moz-border-radius: 15px 1px;
@@ -56,12 +68,24 @@ header {
   margin: 0 0 15px;
   box-shadow: -1px -1px 1px rgba(74, 73, 73, 0.2); }
 
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+  float: left; }
+
 .imgHolder {
   float: left;
   padding: 0; }
 
+.pad {
+  padding: 0 20px; }
+
 .txt_items {
-  color: #aa17d7; }
+  color: #AA17D7;
+  margin: 0 6px;
+  float: left; }
 
 .breaker
 #page-wrap {

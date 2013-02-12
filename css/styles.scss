@@ -6,6 +6,7 @@ $bColor: #b1a0a0;
 $white: rgba(255,255,255,0.68);
 $left:left;
 $mid:0 auto;
+$pad: 0 20px;
 //text
 $h1: 45px;
 
@@ -59,7 +60,11 @@ $h1: 45px;
 	margin:0px;
 	paddng:0px;
 }
-
+.items a {
+  color: #4ed767 !important;
+  &:hover { color: #ffb3ff !important; }
+  &:visited { color: #c458cb !important; }
+}
 body{
 	background:url('../img/diagonal-noise.png') repeat $baseColor;
 	@include center;
@@ -106,6 +111,11 @@ header {
   }
 
 }
+.featurette-heading{
+width: 540px;
+float: left;
+margin: 0 5px;
+}
 //**** body
 .items{
 	@include border;
@@ -115,14 +125,27 @@ header {
 	@include dropShadow;
 
 }
+.lead {
+	margin-bottom: 20px;
+	font-size: 21px;
+	font-weight: 200;
+	line-height: 30px;
+	float: left;
+	}
 .imgHolder{
 	float: left;
 	padding: 0;
 }
-.txt_items{
+.pad{ 
 	
-	color: #aa17d7;
+	
+	padding: $pad;
 }
+.txt_items {
+	color: #AA17D7;
+	margin: 0 6px;
+	float: left;
+	}
 .breaker
 #page-wrap{
 	padding-top:20px;
