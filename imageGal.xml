@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+  <images>
+	 <image1>
+	   	 <title>Css Tricks</title>
+	     <img>img/1.jpg</img>
+	   </image1>
+	   <image1>
+	   	 <title>Css Tricks</title>
+	     <img>img/2.jpg</img>
+	   </image1>
+	   <image1>
+	   	 <title>Css Tricks</title>
+	     <img>img/3.jpg</img>
+	   </image1>
+	   <image1>
+	   	 <title>Css Tricks</title>
+	     <img>img/4.jpg</img>
+	   </image1>
+ </images>
