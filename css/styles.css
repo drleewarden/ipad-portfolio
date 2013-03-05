@@ -2,8 +2,16 @@
   margin: 0px;
   paddng: 0px; }
 
+.items a, .items a:active, .items a:link, .items a:visited {
+  color: #3300CC;
+  display: block;
+  margin-top: 10px; }
+
 .items a {
-  color: #4ed767 !important; }
+  color: #4ed767 !important;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 11px 4px; }
   .items a:hover {
     color: #ffb3ff !important; }
   .items a:visited {
@@ -92,13 +100,6 @@ header {
   padding-top: 20px;
   padding-left: 20px; }
 
-.items a, .items a:active, .items a:link, .items a:visited {
-  font-size: 1.2em;
-  color: #3300CC;
-  text-decoration: underline;
-  display: block;
-  margin-top: 10px; }
-
 .items a:hover {
   text-decoration: none; }
 
@@ -109,3 +110,7 @@ header {
 .long {
   font-size: 0.8em;
   padding-left: 10px; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .span12 {
+    width: 920px; } }

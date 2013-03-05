@@ -60,10 +60,20 @@ $h1: 45px;
 	margin:0px;
 	paddng:0px;
 }
-.items a {
-  color: #4ed767 !important;
+.items a,.items a:active,.items a:link,.items a:visited{
+	color:#3300CC;
+	display:block;
+	margin-top:10px;
+	}
+
+.items a{
+  color: #4ed767 !important; 
+  text-decoration: none;
+  font-size: 30px;
+  margin: 11px 4px;
   &:hover { color: #ffb3ff !important; }
   &:visited { color: #c458cb !important; }
+  
 }
 body{
 	background:url('../img/diagonal-noise.png') repeat $baseColor;
@@ -111,11 +121,11 @@ header {
   }
 
 }
-.featurette-heading{
-width: 540px;
-float: left;
-margin: 0 5px;
-}
+	.featurette-heading{
+	width: 540px;
+	float: left;
+	margin: 0 5px;
+	}
 //**** body
 .items{
 	@include border;
@@ -152,13 +162,6 @@ margin: 0 5px;
 	padding-left:20px;
 	}
 
-.items a,.items a:active,.items a:link,.items a:visited{
-	font-size:1.2em;
-	color:#3300CC;
-	text-decoration:underline;
-	display:block;
-	margin-top:10px;
-	}
 .items a:hover{
 	text-decoration:none;	
 	}
@@ -170,4 +173,8 @@ margin: 0 5px;
 	font-size:0.8em;
 	padding-left:10px;
 	}
-
+@media (min-width: 768px) and (max-width: 979px) {	
+		.span12 {
+		width: 920px;
+		}
+}

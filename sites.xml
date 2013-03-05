@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
  <sites>
    <site id="0">
-     <title>Think2Loud</title>
+     <title>Samsonite</title>
      <img>img/1.jpg</img>
-	<url>http://www.think2loud.com</url>
+	<url>http://www.samsoniteaustralia.com</url>
      <desc>
-       <brief>this is the brief description.</brief>
+       <brief>e-commerce platfom with custom functioality</brief>
        <long>...and this is the long description.  See how long it is :)</long>
      </desc>
    </site>
