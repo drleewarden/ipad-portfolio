@@ -162,7 +162,7 @@
 
     /* Thin out the marketing headings */
     .featurette-heading {
-      font-size: 24px;
+      font-size: 50px;
       font-weight: 300;
       line-height: 1;
       letter-spacing: -1px;
@@ -376,7 +376,7 @@
           
 	     
           </p>
-          <p><a class="btn" id="samsonite" href="#" >View details &raquo;</a></p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
@@ -439,7 +439,6 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-     <script src="js/mainScript.js"></script>
     <script>
       !function ($) {
         $(function(){
@@ -448,9 +447,7 @@
         })
       }(window.jQuery)
                             
-     	$(document).ready(function($){
-     	alert("weeell")
-		function loadXML(ajax, success){
+     	$(document).ready(function(){
 			$.ajax({
 				
 				type: "GET",
@@ -495,11 +492,6 @@
 					});
 				}
 			});*/
-			})
-			$('#samsonite').click(function(){
-				loadXML();
-				alert('boom');
-			});
 		});
      </script>
   </body>
