@@ -80,11 +80,15 @@ ipad.core = (function(doc, $, undefined) {
 //    	CCAf.temp();
     	
     	ipad.getdata();
-    	ipad.indexData();
+    	ipad.getdataTaylor();
        
 
     },
 // ############################################################# temp of brew manipulation
+
+
+// ############################################################# ipad samsonite gal
+
     ipad.getdata = function(){
 		
 		$.ajax({
@@ -108,7 +112,35 @@ ipad.core = (function(doc, $, undefined) {
 
 		
                         
+	},
+// ############################################################# temp of brew manipulation
+	
+	 ipad.getdataTaylor = function(){
+		
+		$.ajax({
+		type: "get",
+		url:"imageGal.xml",	
+		dataType: "xml",
+			success: function(data){
+			$(data).find("image2").each(function(){
+			var ths = $(this);
+			var img = ths.find("img").text();
+			var title = ths.find("title").text();
+			var dec = ths.find("dec").text();
+			var mod = ths.find("mog").text();
+				$("#slider2").append('<img src="'+img+'" /><br><div class="overlay"><a role="button" data-toggle="modal" class="btn btn-large btn-primary topMarg" href="#' + mod + '">Read Description</a></div><br><div id="'+ mod +'" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">'+ title +'</h3></div><div class="modal-body"><p>'+ dec +'</p></div></div>');
+				console.log(data)
+				
+					})
+				   }
+				})
+
+
+		
+                        
 	}
+
+	
 	return {
     run: init
   };

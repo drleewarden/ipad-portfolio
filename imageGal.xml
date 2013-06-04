@@ -30,4 +30,36 @@
 	     <img>img/gal/5.jpg</img>
 	     <dec>This is a Short description</dec>
 	   </image1>
+	   <image2>
+	 	<mog>one</mog>
+	   	 <title>Css 1</title>
+	     <img>img/gal2/img1.jpg</img>
+	     <dec>This is a Short description</dec>
+	   </image2>
+	   <image2>
+	   <mog>two</mog>
+	   	 <title>Css 2</title>
+	     <img>img/gal2/img2.jpg</img>
+	     <dec>This is a Short description</dec>
+	   </image2>
+	   <image2>
+	   <mog>three</mog>
+	   	 <title>Css 3</title>
+	     <img>img/gal2/img3.jpg</img>
+	     <dec>This is a Short description</dec>
+	   </image2>
+	   <image2>
+	   <mog>four</mog>
+	   	 <title>Css 4</title>
+	     <img>img/gal2/img4.jpg</img>
+	     <dec>This is a Short description</dec>
+	   </image2>
+	   <image2>
+	   <mog>five</mog>
+	   	 <title>Css 4</title>
+	     <img>img/gal2/img5.jpg</img>
+	     <dec>This is a Short description</dec>
+	   </image2>
+
+
  </images>
