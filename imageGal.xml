@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
   <images>
 	 <image1>
-	   	 <title>Css Tricks</title>
-	     <img>img/1.jpg</img>
+	 	<mog>one</mog>
+	   	 <title>Css 1</title>
+	     <img>img/gal/1.jpg</img>
+	     <dec>This is a Short description</dec>
 	   </image1>
 	   <image1>
-	   	 <title>Css Tricks</title>
-	     <img>img/2.jpg</img>
+	   <mog>two</mog>
+	   	 <title>Css 2</title>
+	     <img>img/gal/2.jpg</img>
+	     <dec>This is a Short description</dec>
 	   </image1>
 	   <image1>
-	   	 <title>Css Tricks</title>
-	     <img>img/3.jpg</img>
+	   <mog>three</mog>
+	   	 <title>Css 3</title>
+	     <img>img/gal/3.jpg</img>
+	     <dec>This is a Short description</dec>
 	   </image1>
 	   <image1>
-	   	 <title>Css Tricks</title>
-	     <img>img/4.jpg</img>
+	   <mog>four</mog>
+	   	 <title>Css 4</title>
+	     <img>img/gal/4.jpg</img>
+	     <dec>This is a Short description</dec>
+	   </image1>
+	   <image1>
+	   <mog>five</mog>
+	   	 <title>Css 4</title>
+	     <img>img/gal/5.jpg</img>
+	     <dec>This is a Short description</dec>
 	   </image1>
  </images>
